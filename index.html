@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FestiCar</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Bodoni Moda:200,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Murecho Moda:200,300,400,700" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5fd638e2b8.js" crossorigin="anonymous"></script>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="./css/bulma/css/bulma.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+
+  <!-- HEADER : START -->
+  <div class="container-.is-max-desktop">
+    <nav class="level">
+      <!-- left side -->
+      <div class="level-left">
+        <a href="https://www.mercedes-benz.co.jp/passengercars.html"><img id="top_logo" src="./img/mercedes_logo.png"
+            alt=""></a>
+      </div>
+      <!-- Center side -->
+      <div class="level-center">
+
+      </div>
+      <!-- Right side -->
+      <div class="level-right">
+        <div class="level-item">
+          <a href="https://www.mercedes-benz.co.jp/passengercars/content-pool/tool-pages/legal/copyright.html">
+            <p class="subtitle is-7">
+              ©Mercedes-Benz Japan. All rights reserved.
+            </p>
+          </a>
+        </div>
+        <div class="level-item">
+          <div class="field has-addons">
+            <div class="form-container">
+              <form class="form">
+                <input type="text" id="searchText" class="input" placeholder="検索" /><button id="search"
+                  class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+            <div class="results-container">
+              <ul class="results-list" id="list">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <nav class="level navItems">
+      <div class="level-item nav-item">
+        <p class="level-item"><a href="" id="nav_lineUp"><i class="fa-solid fa-car"></i>ラインアップ</a></p>
+        <p class="level-item"><a
+            href="https://www.mercedes-benz.co.jp/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE#:~:text=%E3%81%94%E8%B3%BC%E5%85%A5%E3%82%92-,%E6%A4%9C%E8%A8%8E,-%E4%B8%AD%E3%81%AE%E6%96%B9">ご購入をご検討中の方へ</a>
+        </p>
+        <p class="level-item"><a href="">認定中古車</a></p>
+        <p class="level-item"><a href="">サービス</a></p>
+        <p class="level-item"><a href="">ブランド</a></p>
+      </div>
+    </nav>
+    <!-- HEADER : END -->
+
+
+    <!-- <!-- MainVisual : START -->
+    <div class="container-fluid">
+      <div class="row mainVisual_container">
+        <div class="col-1">
+        </div>
+        <div class="col-11 mainVisual">
+          <div class="mainVisual_text">
+            <p class="mainVisual_p1">The all new <br>EQS/EQE</p><br>
+            <p class="mainVisual_p2">EQS　電気自動車に、最高峰を。<br>EQE　電気自動車に、圧倒的な満足を。<br><br>※写真の仕様・装備は、日本仕様と異なる場合があります。</p>
+            <br><br>
+            <div class="mainVisual_btns">
+              <div class="mainVisual_btn1">
+                <a href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/eqe/saloon-v295/eqe/explore.html"
+                  class="btn btn-secondary bg-dark" tabindex="-1" role="button" aria-disabled="false">EQEを詳しく見る</a>
+              </div>
+              <div class="mainVisual_btn2">
+                <a href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/eqs/explore.html"
+                  class="btn btn-primary" tabindex="-1" role="button" aria-disabled="false">EQSを詳しく見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MainVisual : END -->
+
+  <!-- <!-- Topics : START -->
+  <div class="container topic_container">
+    <div class="row">
+      <div class="col">
+        <h2 class="body_subtitles">トピックス</h2>
+
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img
+                      src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item.component.damq6.3307778495291.jpg/20220210_semiconductor_announce_512x384.jpg"
+                      alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">メルセデス・ベンツの生産遅延について</h2>
+                  <p class="description">現在、メルセデス・ベンツは新型コロナ・ウィルスの感染拡大、並びに世界的な半導体不足等により、いくつかの車種・モデルの生産遅延が発生しております。</p>
+
+                  <a href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/semiconductor.html"><button
+                      class="button"">詳しく見る</button></a>
+                  </div>
+                </div>
+    
+                <div class=" card swiper-slide">
+                      <div class="image-content">
+                        <div class="card-image">
+                          <img
+                            src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_593080534.component.damq6.3326069483527.jpg/220909announce_oneweb_topics_images512x384.jpg"
+                            alt="" class="card-img">
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="name">Mercedes me ID をお持ちのお客様 各位</h2>
+                        <p class="description">改定されたMercedes me IDの利用規約およびプライバシーポリシー (データ保護規定) のご確認依頼、および再同意手順のご案内</p>
+
+                        <a href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/consent.html"><button
+                            class="button"">詳しく見る</button></a>
+                  </div>
+                </div>
+    
+                <div class=" card swiper-slide">
+                            <div class="image-content">
+                              <div class="card-image">
+                                <img
+                                  src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_896481276.component.damq6.3329281860397.jpg/20220929_AMG55th_TOP_Topics.jpg"
+                                  alt="" class="card-img">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <h2 class="name">Mercedes-AMG 55 years – CHANGING THE GAME</h2>
+                              <p class="description">創立から55年の歴史の中で、パフォーマンスカーとスポーツカーにおけるスタンダードを確立し続けてきたMercedes-AMG。
+                                ドライビング性能のさらなる向上とラグジュアリーさの追求によって、飛躍的な進化を遂げます。</p>
+
+                              <a
+                                href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/mercedes-amg/amg-55years.html"><button
+                                  class="button"">詳しく見る</button></a>
+                  </div>
+                </div>
+    
+                <div class=" card swiper-slide">
+                                  <div class="image-content">
+
+
+                                    <div class="card-image">
+                                      <img
+                                        src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_844012668.component.damq6.3332187932258.jpg/20221018_c43_bnr_mbjtop1534x1150.jpg"
+                                        alt="" class="card-img">
+                                    </div>
+                                  </div>
+
+                                  <div class="card-content">
+                                    <h2 class="name">Mercedes-AMG C 43 4MATIC（BSG搭載モデル） / Mercedes-AMG C 43 4MATIC
+                                      Stationwagon（BSG搭載モデル）</h2>
+                                    <p class="description">モータースポーツ起源の、次世代電動テクノロジーを搭載。<br>
+                                      モータースポーツにおける栄光の歴史が刻まれた専用グリルや力強いエアロフォルムがつくる揺るぎない存在感とともに未来を提示する、Mercedes-AMG最先端のハイパフォーマンスモデルです。
+                                    </p>
+
+                                    <a
+                                      href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/mercedes-amg/amg-55years.html"><button
+                                        class="button"">Mercedes-AMG C 43 4MATICを詳しく見る</button></a>
+                      <a href=" https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/c-class/estate-s206/c-class-wagon/amg.html"><button
+                                          class="button"">Mercedes-AMG C 43 4MATIC Stationwagonを詳しく見る</button></a>
+                  </div>
+                </div>
+                <div class=" card swiper-slide">
+                                          <div class="image-content">
+
+
+                                            <div class="card-image">
+                                              <img
+                                                src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_989196794.component.damq6.3332521819698.jpg/20221020_EQS_Topics_01.jpg"
+                                                alt="" class="card-img">
+                                            </div>
+                                          </div>
+
+                                          <div class="card-content">
+                                            <h2 class="name">The all new EQS</h2>
+                                            <p class="description">新開発のEV専用プラットフォームを採用した初めてのモデル、EQS。
+                                              すべてが新しい時代のラグジュアリーを体現する、メルセデスEQのフラッグシップモデルです。</p>
+
+                                            <a
+                                              href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/eqs/explore.html"><button
+                                                class="button"">詳しく見る</button></a>
+                                          </div>
+                                  </div>
+                                  <div class=" card swiper-slide">
+                                                <div class="image-content">
+
+
+                                                  <div class="card-image">
+                                                    <img
+                                                      src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_2081064199.component.damq6.3332521791531.jpg/20221020_EQE_Topics_02.jpg"
+                                                      alt="" class="card-img">
+                                                  </div>
+                                                </div>
+
+                                                <div class="card-content">
+                                                  <h2 class="name">The all new EQE</h2>
+                                                  <p class="description">メルセデスのEV専用プラットフォームを採用したエグゼクティブセダン。
+                                                    EQEが提示するものは、乗る人のすべての感覚に深い心地よさをもたらす、次世代プレミアムEVセダンの新たな指標です。</p>
+
+                                                  <a
+                                                    href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/eqe/saloon-v295/eqe/explore.html"><button
+                                                      class="button"">詳しく見る</button></a>
+                                    </div>
+                                  </div>
+                                  <div class=" card swiper-slide">
+                                                      <div class="image-content">
+
+
+                                                        <div class="card-image">
+                                                          <img
+                                                            src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_888407003.component.damq6.3322280485292.jpg/20220729_MMGLSteaser_512x384_01.jpg"
+                                                            alt="" class="card-img">
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="card-content">
+                                                        <h2 class="name">The Mercedes-Maybach GLS</h2>
+                                                        <p class="description">究極のラグジュアリーと
+                                                          最先端テクノロジーの融合を追い求めた
+                                                          メルセデス・マイバッハ。</p>
+
+                                                        <a
+                                                          href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/models/gls/mercedes-maybach-x167/explore.html"><button
+                                                            class="button"">詳しく見る</button></a>
+                                    </div>
+                                  </div>
+                                  <div class=" card swiper-slide">
+                                                            <div class="image-content">
+
+
+                                                              <div class="card-image">
+                                                                <img
+                                                                  src="https://www.mercedes-benz.co.jp/content/japan/ja/passengercars/_jcr_content/root/responsivegrid/simple_teaser/simple_teaser_item_1114231167.component.damq6.3320233178025.jpg/simple-teaser-mercedes-benz-store-512x384.jpg"
+                                                                  alt="" class="card-img">
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="card-content">
+                                                              <h2 class="name">気になる車両を探すなら、オンラインショールームから。</h2>
+                                                              <p class="description">
+                                                                オンラインショールームでは、掲載されている車両の中からあなたのお気に入りの一台をセレクトして、優先的に商談が進められる「Web
+                                                                商談予約」、「見積依頼」や「お問い合わせ」をすることができます。</p>
+
+                                                              <a
+                                                                href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/online-showroom-landingpage.html"><button
+                                                                  class="button"">詳しく見る</button></a>
+                                                                  <a href=" https://shop.mercedes-benz.com/ja-jp/shop/"
+                                                                  class="btn btn-primary" tabindex="-1" role="button"
+                                                                  aria-disabled="false">気になる車両を探す</a>
+                                                            </div>
+                                                      </div>
+
+                                                </div>
+                                          </div>
+                                          <div class="swiper-button-next swiper-navBtn">
+                                          </div>
+                                          <div class="swiper-button-prev swiper-navBtn"></div>
+                                          <div class="swiper-pagination"></div>
+                                  </div>
+                            </div>
+                      </div>
+                </div>
+              </div>
+              <!-- Topics : END -->
+
+              <!-- LINEUP : START -->
+              <div class="container topic_container">
+                <div class="row">
+                  <div class="col">
+                    <!-- <h2>Car Configurator</h2>
+                    <form id="searchForm">
+                      <input type="text" placeholder="Model Name" name="query">
+                      <button>Search</button>
+                    </form>
+                    <div id="resultImages"></div> -->
+
+
+
+
+
+
+
+                    <section id="lineUp">
+                      <h2 class="body_subtitles">ラインアップ</h2>
+
+                      <input id="myInput" type="text" placeholder="Search..">
+                      <br>
+                      <div class="col lineUp">
+                        <ul id="myList">
+                          <li>A-Class / Compact
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4304/c/64/7fdbcf602d9208f464f182cd976b8673a13b9.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>A-Class AMG / Compact
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4304/5/eb/72ed3f209343239d96bfaa155ff3a8c9bd8dd.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>B-Class /Compact
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4309/0/a0/5d6475e50d22efe8c1234b010ed85cc19837c.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>A-Class Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4304/f/ec/055741afa203ccff281169e3bf47fe87a52c6.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>A-Class AMG / Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4304/4/45/100700c070a7ba66be9e8ada73c1a60491891.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>C-Class Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4688/f/be/f0a37e7304228f808b90b1419f15056037c1a.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>C-Class AMG / Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5157/b/a1/12e5bdcba3ed37c79b69cac28684fc5a0b8d0.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>E-Class Sedan / HYBRID / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4064/0/ae/7573f59a12de205df522fe9ff8f530b41aaf1.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class AMG / Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4064/f/58/a25bac114b6142383b0f163a8756ae74e581c.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>S-Class Sedan / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4122/e/3a/fdfd3c53a86414f355f21f2bf496b31f6e6d4.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>S-Class Sedan Long / HYMRID / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4122/3/40/6b46e38f5615c802f06f9bed09d6484f03130.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-Maybach S-Class / Sedan
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4290/2/5b/a219f101d58d010e1a65bd2c195c4f5d12b28.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>EQE Sedan / Sedan / #EV / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4897/c/71/8ec7521e34cad5709642f3b9425328cd79f8a.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>EQE Sedan AMG / Sedan / #EV / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4897/c/71/8ec7521e34cad5709642f3b9425328cd79f8a.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>EQS Sedan / Sedan / #EV / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5114/6/d5/4f313da3245371b9148065ec666cfa6dc3814.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>EQS Sedan AMG / Sedan / #EV / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5114/a/d4/a65299b712c060bfcdf028c60130852adff33.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>C-Class Stationwagon / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4688/e/23/c9dc7b4c06d66c3377315f4e7c47ade497895.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>C-Class AMG / Stationwagon / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5157/5/f5/9e174e49cd53f41ac405b9e20e31a7272f27f.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>C-Class All-Terrain / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4688/c/65/2cdbc73fc68a4291d9ba3e7c7253336486242.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class Stationwagon / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4064/4/33/37835cd59b202793bc653123e4225fc47ff7a.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class AMG / Stationwagon / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4064/1/4e/475d8f7b1a63444cf1fd3696ff02133f61416.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>E-Class All-Terrain / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4064/b/22/733046d95043df21ae97546542c0bffe33119.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLA Shooting Brake / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4018/b/82/8e13aa4ba797b34deae0f7f7957251e0a672a.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLA Shooting Brake AMG / Stationwagon
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4018/a/3c/ed6bfe05f7715a7014861f10e49755df5f8e0.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>GLA / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4078/c/56/5422fb32a0d30ac06237e812f77b824cbd2f0.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLA AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4078/5/b4/13dd65e069e6bb25e761dc6ce413f2d41410e.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>EQA / SUV / #EV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4215/d/66/82536293843a17631f7fb1a47ec99a4e53a27.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLB / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4053/3/8a/85896af3faf96ace064b930fb0d4d3baffa93.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLB AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4053/9/b8/d1f2b9d33bf6f53a7fabffee9265fb284aa62.png?im=Crop,rect=(70,35,460,260);Resize,width=500"
+                              alt="">
+                          </li>
+                          <li>EQB / SUV / #EV / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4936/b/93/ced69e8d8e096cb5e4ad33ab0146af4d73982.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLC / HYBRID / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/0/b0/8f5be1660c2d3c0b2d7bf1da08eed0175ee84.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLC AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/c/1c/436b06237bc19a2dbe2a182f46591e9ae20f4.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLC Coupé / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/f/af/a44683d5696711e2165dd4ed11112cbc590a0.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLC AMG /Coupé / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/2/44/ed070cadace1088462fe3c431d50c256f64b6.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>EQC / SUV / #EV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4357/8/fd/bb91091e03ef23b942b0ff7cf6d2b294c8150.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLE / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4401/2/33/7be8435e2e97a1c5aeaba6f10dbb7429d03a9.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLE AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/5/1b/5c2306be94bf0caad7d771bc889a1b7d5438b.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLE Coupé / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/1/82/543ba5b161bdcd2b3e7a9cf9464ce4d7552b9.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLE AMG Coupé / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/9/47/552389ebd3ca61a4b39752ca17e6d79d4dfa9.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLS / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/5/9e/54883feb4f2ad00b66f140eac714691bcb2b6.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>GLS AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3759/f/01/31187508212d21900808d0f083987c992f9a7.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>G-Class / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3594/5/a1/506ffc130bf3619ec974b97fdfa0d6cf5d982.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>G-Class AMG / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3398/f/3d/5dfa0f9e128603aa69711d01faee7b1601d96.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-Maybach GLS / SUV
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4704/4/e5/8bc8524b1874f16887f506b2a5a6f63401e3e.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLA Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4018/2/69/969b0fa337521d6e4be8306e3aedaa0820192.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLA AMG / Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4018/6/1f/f7ab34b87888c000ddde28e89a3f6011ed035.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>C-Class Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4355/6/7b/8c1abd488eeea8c941619ab12a3e88895d9d0.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3795/1/f7/ce5d027f849265906d624ffabb8b23aa6c24e.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class AMG / Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4399/d/70/1e6faaeb984a9d3e4d6409679e0e3a574874a.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLS Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4405/a/5e/edabaf57f922e1ad4e05bef3a017f208cd8f1.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>CLS Coupé AMG / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4405/e/b9/bb7f31bb0045b1c73dd9f72540f9287548904.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/1/48/f1e068c15dc9566d4f0ef7954b17ee5a0cc94.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT Coupé AMG / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/1/48/f1e068c15dc9566d4f0ef7954b17ee5a0cc94.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT 4-Door-Coupé / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4407/f/e1/3cfa541b801b20d399f653fabfc2b47182c74.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT 4-Door-Coupé AMG / Coupé
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4407/f/e1/3cfa541b801b20d399f653fabfc2b47182c74.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>C-Class Cabriolet / Cabriolet/Roadster
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4354/f/77/3dc002c9d201e2c4cc7d1f6723d295a7cdddb.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class Cabriolet / Cabriolet/Roadster
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3795/3/92/5eeda499ebba653a000981f5f58885f99b5c2.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>E-Class Cabriolet AMG / Cabriolet/Roadster
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4399/5/aa/c952496968ca0fc784393bada45d24e03e414.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG SL Roadster / Cabriolet/Roadster / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5003/c/67/739d12bd88313cee0ab4caee7edde593e65e6.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG SL Roadster AMG / Cabriolet/Roadster / *NEW
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/5003/c/67/739d12bd88313cee0ab4caee7edde593e65e6.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT Roadster / Cabriolet/Roadster
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/f/33/434606acefb37317af83640d1d6b90539733d.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>Mercedes-AMG GT Roadster AMG / Cabriolet/Roadster
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/3679/f/33/434606acefb37317af83640d1d6b90539733d.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                          <li>V-Class / Mini Van
+                            <img
+                              src="https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4689/a/89/2ec734cdbf9055c4b20f24121be3454879f7b.png?im=Crop,rect=(70,35,460,260);Resize,width=600"
+                              alt="">
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LINEUP : END -->
+
+
+
+              <footer>
+                <div class="container backToTop">
+                  <a href="#top"><i class="fa-solid fa-chevron-up fa-2xl"></i>トップに戻る</a>
+                </div>
+                <div class="container upperFooter">
+                  <div class="row footer_row1">
+                    <div class="col footer_col1">
+                      <p class="level-item footerSubtitle">企業情報</p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/brand/special-offer-campaign.html">Special
+                          Offer
+                          /キャンペーン・イベント</a></p>
+                      <p class="level-item footerItem"><a
+                          href="https://media.mercedes-benz.jp/">プレスリリース(報道関係者様向けメディアサイト)</a>
+                      </p>
+                      <p class="level-item footerItem"><a href="https://www.mercedes-benz.jp/myservice/recall/">リコール</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/brand/corporate.html">会社概要/採用情報</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/brand/corporate/announcement.html">お詫びとお知らせ</a>
+                      </p>
+                    </div>
+                    <div class="col footer_col1">
+                      <p class="level-item footerSubtitle">オンラインサービス</p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/dealer-locator.html">ディーラー検索</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/test-drive.html">試乗予約</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/buy/estimate.html">見積シミュレーション</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/online-showroom-landingpage.html">オンラインショールーム</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/buy/salestalk-request.html">ご購入相談</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/being-an-owner/mercedes-me-connect.html">Mercedes
+                          me
+                          connect</a></p>
+                      <p class="level-item footerItem"><a href="https://faq.mercedes-benz.co.jp/">よくあるご質問
+                          (Search Hub)</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/english/toppage.html">For
+                          Foreign
+                          Customers</a></p>
+                    </div>
+                    <div class="col footer_col1">
+                      <p class="level-item footerSubtitle">ユーザーサイト</p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/mercedes-benz-cars/mercedes-me.html">Mercedes
+                          me</a>
+                      </p>
+                    </div>
+                    <div class="col footer_col1">
+
+                    </div>
+                    <div class="col footer_col1">
+
+                    </div>
+                    <div class="col footer_col1">
+
+                    </div>
+                  </div>
+                </div>
+                </section>
+
+                <div class="container lowerFooter">
+                  <div class="row footer_row2">
+                    <div class="col footer_col1">
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/content-pool/tool-pages/legal/copyright.html">©Mercedes-Benz
+                          Japan. All rights reserved.</a></p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/content-pool/tool-pages/legal/legal-notice.html">ご利用条件/反社会勢力に対する基本方針</a>
+                      </p>
+                    </div>
+                    <div class="col footer_col1">
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/content-pool/tool-pages/legal/privacy-statement.html">プライバシーポリシー/個人情報の取り扱いについて</a>
+                      </p>
+                      <p class="level-item footerItem"><a
+                          href="https://www.mercedes-benz.co.jp/passengercars/content-pool/tool-pages/legal/cookies.html">クッキーの設定</a>
+                      </p>
+                    </div>
+                    <div class="col footer_col_sns">
+                      <p class="level-item footerItem_sns"><a href="https://www.facebook.com/mercedesbenz.jp"><i
+                            class="fa-brands fa-square-facebook fa-2xl"></i></a></p>
+                      <p class="level-item footerItem_sns"><a href="https://twitter.com/MercedesBenz_JP"><i
+                            class="fa-brands fa-twitter fa-2xl"></i></a></p>
+                      <p class="level-item footerItem_sns"><a
+                          href="https://www.youtube.com/user/mercedesbenzjapan/featured"><i
+                            class="fa-brands fa-youtube fa-2xl"></i></a></p>
+                      <p class="level-item footerItem_sns"><a href="https://www.instagram.com/mercedesbenzjapan/"><i
+                            class="fa-brands fa-instagram fa-2xl"></i></a></p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+              <!-- ここから上にコードを書く -->
+              <!-- この中に記述していく -->
+
+
+
+</body>
+<!-- Swiper CSS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/main.js"></script>
+<!-- Bootstrap's JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#myInput").on("keyup", function () {     // when a search key-word is released,
+      var value = $(this).val().toLowerCase();    // capture the key-word as a value with transforming to lowercase
+      $("#myList li").filter(function () {    // activate filter function at 'li' elements
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)    // show results up, if there was positive results (= indexOf value is greater than -1. '-1' means NOT FOUND)
+      });
+    });
+  });
+
+
+  $(document).ready(function () {
+    // Click event for any anchor tag that's href starts with #
+    $('a[href^="#nav_lineUp"]').click(function (event) {
+
+      // The id of the section we want to go to.
+      var id = $(this).attr("#lineUp");
+
+      // An offset to push the content down from the top.
+      var offset = 60;
+
+      // Our scroll target : the top position of the
+      // section that has the id referenced by our href.
+      var target = $(id).offset().top - offset;
+
+      // The magic...smooth scrollin' goodness.
+      $('html, body').animate({ scrollTop: target }, 500);
+
+      //prevent the page from jumping down to our section.
+      event.preventDefault();
+    });
+  });
+</script>
+
+</html>
